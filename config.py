@@ -27,8 +27,8 @@ class Config(object):
 
         if dataset_name == 'volleyball':
             self.data_path = 'data'  # data path for the volleyball dataset
-            self.train_seqs = [45, 46, 49, 41, 52, 44]  # video id list of train set
-            self.test_seqs = [51, 50]  # video id list of test set
+            self.train_seqs = [51]  # video id list of train set
+            self.test_seqs = [41]  # video id list of test set
 
         # Backbone 
         self.backbone = 'inv3'
