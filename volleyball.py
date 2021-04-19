@@ -136,13 +136,8 @@ class VolleyballDataset(data.Dataset):
             else:
                 return [fid for fid in range(src_fid - self.num_before, src_fid + self.num_after + 1)]
         else:
-            # if self.is_training:
             sample_frames = range(src_fid - self.num_before, src_fid + self.num_after + 1)  #
             return [fid for fid in sample_frames]
-            # else:
-            #     return [fid for fid in
-            #      lllllllllllllllllll       [src_fid - 3, src_fid, src_fid + 3, src_fid - 4, src_fid - 1, src_fid + 2, src_fid - 2,
-            #              src_fid + 1, src_fid + 4]]
 
     def get_location_change(self, boxes):
         location_change = []
@@ -176,7 +171,7 @@ class VolleyballDataset(data.Dataset):
 
         for i, fid in enumerate(select_frames):
 
-            img = Image.open(self.images_path + '/volleyball/%d/%d/%d.jpg' % (sid, src_fid, fid))
+            img = Image.open(self.images_path + '/%d/%d/%d.jpg' % (sid, src_fid, fid))
 
             img = transforms.functional.resize(img, self.image_size)
             img = np.array(img)
