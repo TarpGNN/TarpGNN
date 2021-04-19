@@ -2,6 +2,6 @@ this is the code for paper team sport activity recognition and prediction based 
 
 ## Dependencies
 * Python 3.x
-* PyTorch 0.4.1
+* PyTorch>=0.4.1
 * numpy, pickle, scikit-image
 * RoIAlign for Pytorch
