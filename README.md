@@ -1,4 +1,4 @@
-# this is the code for paper Team Sport Activity Recognition and Prediction Based on Graph Neural Network,submitted to MM'21
+# this is the code for paper Team Sport Activity Recognition and Prediction Based on Graph Neural Network
 
 ## Dependencies
 * Python 3.x
